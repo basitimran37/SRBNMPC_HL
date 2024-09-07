@@ -5,6 +5,15 @@
 
 This project consists of a main project for the SRB_NMPC and a nested project located in the `SRB_NMPC_Casadi_Formulation` folder. The nested project is used for a one-time symbolic MPC setup and code generation. Once the solver is exported to shared library objects, it is utilized by the main project to run the NMPC problem in real-time.
 
+## Dependencies
+
+- Ipopt
+- Casadi (build from scratch with ipopt option: `cmake .. -DWITH_IPOPT=ON`)
+- libassimp
+- RaisimLib
+- Ogre
+- RaisimOGRE
+
 ## Environment Variables
 
 Before proceeding, ensure the following environment variables are set:
