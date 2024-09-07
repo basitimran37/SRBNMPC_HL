@@ -1,0 +1,4 @@
+build/
+Sim_Outputs
+SRB_NMPC_Casadi_Formulation/build
+SRB_NMPC_Casadi_Formulation/CMakeFiles
