@@ -239,7 +239,7 @@ int main(){
 
         // For ipopt
         // Set Ipopt-specific options
-        opts["ipopt.linear_solver"] = "ma27";
+        // opts["ipopt.linear_solver"] = "ma27";
         opts["ipopt.max_iter"] = 10;  // Replace Max_mpciter with its actual value
         opts["ipopt.print_level"] = 0;  // Can be changed to 0 or 3 based on verbosity required
         opts["print_time"] = 0;  // Disable printing solver time

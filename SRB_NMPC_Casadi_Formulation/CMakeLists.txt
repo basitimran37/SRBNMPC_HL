@@ -66,7 +66,7 @@ if(CMAKE_CXX_COMPILER_LOADED)
     message(STATUS "Compiler Version: ${CMAKE_CXX_COMPILER_VERSION}")
 endif()
 
-set the Ipopt library and include directory
+# set the Ipopt library and include directory
 set(LIBRARY_DIRS /usr/local/lib)
 if(UNIX AND NOT APPLE)
     set(IPOPT_INCLUDE_DIRS /usr/include/coin-or)
