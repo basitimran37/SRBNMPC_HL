@@ -66,13 +66,13 @@ if(CMAKE_CXX_COMPILER_LOADED)
     message(STATUS "Compiler Version: ${CMAKE_CXX_COMPILER_VERSION}")
 endif()
 
-# set the Ipopt library and include directory
-# set(LIBRARY_DIRS /usr/local/lib)
-# if(UNIX AND NOT APPLE)
-#     set(IPOPT_INCLUDE_DIRS /usr/include/coin-or)
-# elseif(APPLE)
-#     set(IPOPT_INCLUDE_DIRS /usr/local/include/coin-or)
-# endif()
+set the Ipopt library and include directory
+set(LIBRARY_DIRS /usr/local/lib)
+if(UNIX AND NOT APPLE)
+    set(IPOPT_INCLUDE_DIRS /usr/include/coin-or)
+elseif(APPLE)
+    set(IPOPT_INCLUDE_DIRS /usr/local/include/coin-or)
+endif()
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(IPOPT REQUIRED ipopt)
